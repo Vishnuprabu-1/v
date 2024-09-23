@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Landing Page</title>
+    <style>
+        /* General Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #FF0000;
+            font-style: oblique;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px;
+            background-color: #e83238;
+        }
+
+        .hero-content {
+            max-width: 50%;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            color: gold;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .hero-content button {
+            background-color: tomato;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .hero-image {
+            padding: 15px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu-tabs {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-tabs li {
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* Promo Cards */
+        .promos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+
+        .promo-card {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 18%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .promo-card img {
+            width: 150px;
+            height: 110px;
+        }
+
+        /* App Promo Section */
+        .app-promo {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .app-buttons img {
+            width: 150px;
+            margin: 0 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        footer nav ul li {
+            margin: 0 10px;
+        }
+
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Media Queries for Mobile */
+        @media screen and (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .hero-image {
+                width: 100%;
+            }
+
+            .hero-image img {
+                width: 250px;
+                height: 250px;
+            }
+
+            .promos {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .promo-card {
+                width: 80%;
+                margin-bottom: 30px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .menu-tabs {
+                flex-direction: column;
+            }
+
+            .menu-tabs li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">KFC</div>
+        <nav>
+            <ul>
+                <li><a href="https://online.kfc.co.in/about-kfc">About Us</a></li>
+                <li><a href="https://restaurants.kfc.co.in/">Find Us</a></li>
+                <li><a href="https://kfc.responsibledisclosure.com/hc/en-us">All Campaigns</a></li>
+                <li><a href="https://login.kfc.co.in/"><i class="fa fa-user"></i> Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bargain Bucket Menu Campaign</h1>
+            <p>Delicious chicken and fries to brighten your day.</p>
+            <a href="https://online.kfc.co.in/menu">
+                <button>Order Now</button>
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/69e69c55-d2bb-4207-8310-131fc693f78a_26719.JPG" alt="KFC Bucket">
+        </div>
+        </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+    <ul class="menu-tabs">
+        <li>Kids Menu</li>
+        <li>Single Products</li>
+        <li>Box Meals</li>
+        <li>Meals</li>
+        <li>Buckets</li>
+        <li>Chicken</li>
+        <li>Sauces</li>
+        <li>Drinks</li>
+        <li>Sides</li>
+    </ul>
+</section>
+
+<style>
+    .menu-section {
+        overflow-x: auto; /* Allows horizontal scrolling */
+        white-space: nowrap; /* Prevents line breaks */
+    }
+
+    .menu-tabs {
+        display: inline-flex; /* Displays items in a row */
+        padding: 10px 0; /* Adds vertical padding */
+    }
+
+    .menu-tabs li {
+        list-style: none; /* Removes bullet points */
+        padding: 10px 15px; /* Adds padding around each item */
+        min-width: 100px; /* Ensures each item has a minimum width */
+        text-align: center; /* Centers text within each item */
+        border: 1px solid #ccc; /* Optional: Adds a border around items */
+        margin: 0 5px; /* Adds space between items */
+        border-radius: 5px; /* Optional: Rounds corners */
+    }
+
+    /* Optional: Adjustments for better mobile view */
+    @media (max-width: 600px) {
+        .menu-tabs li {
+            font-size: 14px; /* Adjust font size for smaller screens */
+            padding: 8px; /* Adjust padding for smaller screens */
+        }
+    }
+</style>
+
+    
+
+    <!-- Promotional Cards -->
+    <section class="promos">
+        <div class="promo-card">
+            <a href="https://online.kfc.co.in/menu/burgers"><h1 style="color: red;">Any Day Offers</h1></a>
+            <img src="https://images.ctfassets.net/crbk84xktnsl/4zgRg2g2ZRBey10D3qfjyZ/e9f079f486f401b884ad570be0a48af8/Zinger_Burger.png?h=300&w=400&fm=webp&fit=fill" alt="KFC Bucket">
+            <p>12.90 TL</p>
+        </div>
+        <div class="promo-card">
+            <a href="https://online.kfc.co.in/menu/peri-peri-chicken"><h1 style="color: red;">Other Flavours</h1></a>
+            <img src="https://content.jdmagicbox.com/comp/navi-mumbai/w3/022pxx22.xx22.210715175034.p2w3/catalogue/kfc-ulwe-navi-mumbai-fast-food-salacekodi.jpg" alt="KFC Bucket">
+            <p>3.90 TL</p>
+        </div>
+        <div class="promo-card">
+            <a href="https://restaurants.kfc.co.in/"><h1 style="color: red;">Find a KFC Store Near You</h1></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBr-DfctNztCf2IPU3a3RfVD_JRWsh9Pr-Kg&s" alt="KFC Bucket">
+        </div>
+        <div class="promo-card">
+            <a href="https://online.kfc.co.in/menu/chicken-buckets"><h1 style="color: red;">Crispy and Fresh Chicken</h1></a>
+            <img src="https://images.jdmagicbox.com/comp/mumbai/q3/022pxx22.xx22.220802092942.c9q3/catalogue/kfc-kurla-east-mumbai-fried-chicken-delivery-restaurants-2ws8tdzfvd.jpg" alt="KFC Bucket" >
+        </div>
+        <div class="promo-card">
+            <a href="https://online.kfc.co.in/help"><h1 style="color: red;">Want to Be a Hope?</h1></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh4c9EXZYf-_gkJhrCWE-FQA11Eg87Fr1XLA&s" alt="KFC Bucket">
+        </div>
+
+        <!-- Add remaining promo cards as needed -->
+    </section>
+
+    <!-- App Promotion Section -->
+    <section class="app-promo">
+        <div class="app-content">
+            <h2>Now with Your Favorite KFC Mobile Application</h2>
+            <div class="app-buttons">
+                <a href="https://play.google.com/store/apps/details?id=com.yum.kfc&hl=en"><img src="data:image/png;base64,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" alt="Google Play" style="width: 150px; margin: 0 10px;" alt="Google Play"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 KFC. All Rights Reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="https://online.kfc.co.in/about-kfc">About</a></li>
+                    <li><a href="https://online.kfc.co.in/about-kfc/nutrition">Nutrition</a></li>
+                    <li><a href="https://online.kfc.co.in/privacyPolicy">Privacy Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
